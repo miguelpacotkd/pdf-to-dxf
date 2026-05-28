@@ -253,11 +253,7 @@ def process_batch():
         except Exception as e:
             print(f"❌ Failed: {e}")
             failed.append((file, str(e)))
-
-    print("\n======================")
-    print(f"✅ Success: {success}")
-    print(f"❌ Failed: {len(failed)}")
-
+            
     if failed:
         print("\nFailures:")
         for f in failed:
